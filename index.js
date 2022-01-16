@@ -2,7 +2,7 @@
 //end music
 $(function () {
   var audio = document.querySelector("audio");
-  var volumeX;
+  var volumeX=1;
   let songIndex = listSongs.length - 1;
   // console.log(listSongs);
 
