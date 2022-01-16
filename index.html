@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="audio-player">
+    <div class="picture"><img class="imgMusic" src="" alt="" /></div>
+    <audio allow="autoplay" src="" id="audio"></audio>
+    <div class="holder">
+      <div class="info">
+        <h5 class="Name">Name</h5>
+        <span class="progress progressTime">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100" id="progress"></div>
+        </span>
+        <div class="time">00:00 :XX:XX</div>
+        <div class="musician">Musician</div>
+      </div>
+      <div class="control">
+        <ul class="controlMuic">
+          <li>
+            <button class="btn previous">
+              <img class="imgButton" src="img/previous.svg" alt="" />
+            </button>
+          </li>
+          <li>
+            <button class="btn play">
+              <img class="imgButton" src="img/play.svg" alt="" />
+            </button>
+            <button class="btn pause" style="display: none">
+              <img class="imgButton" src="img/pause.svg" alt="" />
+            </button>
+          </li>
+          <li>
+            <button class="btn next">
+              <img class="imgButton" src="img/next.svg" alt="" />
+            </button>
+          </li>
+        </ul>
+        <ul class="controlVolume">
+          <li class="liVolume">
+            <button class="btn btnVolume"><img class="imgButton" src="img/volume.svg" alt=""></button>
+            <button style="display: none;" class="btn btnVolumeX"><img class="imgButton" src="img/volumeX.svg" alt=""></button>
+          </li>
+          <li><span class="progress progressVolume">
+              <div style="width: 100%;" class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="progressVolume">
+            </span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End music -->
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="load.js"></script>
+<script src="index.js"></script>
+
+</html>
